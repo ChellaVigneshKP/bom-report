@@ -1,0 +1,136 @@
+.container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.editProduct {
+  margin-bottom: 20px;
+}
+
+input {
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+input[type="text"] {
+  width: 100%;
+  max-width: 300px; /* Reduced size for component name */
+}
+
+input[type="number"] {
+  width: 100px; /* Reduced width for quantity and unit price */
+}
+
+.componentTable {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerRow {
+  display: flex;
+  font-weight: bold;
+  margin-bottom: 5px; /* Space between header and components */
+}
+
+.headerCell {
+  flex: 1; /* Make each header take equal space */
+  padding: 8px 10px;
+  background-color: #e9ecef; /* Light gray background for header */
+  border-bottom: 2px solid #ddd; /* Distinct border for header */
+  text-align: left;
+}
+
+.componentList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.componentItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff; /* White background for each row */
+  border: 1px solid #ddd; /* Light border for row separation */
+  border-radius: 4px; /* Rounded corners for rows */
+  margin-bottom: 10px;
+}
+
+.componentItem:nth-child(odd) {
+  background-color: #f9f9f9; /* Alternate row background for distinction */
+}
+
+.componentCell {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.componentActions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.componentActions button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.saveAll {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.cancel {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.edit {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.delete {
+  background-color: #dc3545; /* Red color for delete */
+  color: #fff;
+}
+
+.addComponentContainer {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.addComponentContainer input {
+  margin: 0;
+  width: auto; /* Auto width for add component inputs */
+}
+
+.add {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.actionButtons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Center the buttons */
+  gap: 10px;
+}
+
+.actionButtons button {
+  padding: 10px 20px;
+}

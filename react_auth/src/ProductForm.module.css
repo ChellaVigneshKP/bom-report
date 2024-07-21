@@ -1,0 +1,59 @@
+/* src/ProductForm.module.css */
+.container {
+  padding: 20px;
+  max-width: 500px; /* Increased size for container */
+  margin: auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the input fields */
+}
+
+input {
+  width: 100%;
+  max-width: 400px; /* Adjust width to fit the container */
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button {
+  background-color: #007bff; /* Blue for Save */
+}
+
+.button:nth-child(2) {
+  background-color: #dc3545; /* Red for Cancel */
+}
